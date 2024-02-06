@@ -1,0 +1,15 @@
+<nav id="navigation">
+    <ol class="nav-wrapper">
+        <li><a class="home" href="/">HOME</a></li>
+        <li class="about-style"><a class="about" href="/about">ABOUT US</a></li>
+        <li><a class="contact" href="/contact">CONTACT</a></li>
+        <li><a class="products" href="/products">PRODUCTS</a></li>
+    </ol>
+    <% if(first_name){ %>
+        <p>Hello, <%= first_name %>!</p>
+        <div class="account"><a href="/logout">Logout</a></div>
+      <% } else{ %>  
+        <div class="account"><a href="/login"> <i class="fa fa-user-circle" aria-hidden="true"></i></a></div>
+        <% } %>
+</nav>
+

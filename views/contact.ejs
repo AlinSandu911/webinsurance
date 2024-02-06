@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/stylesheet.css"></link>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Work+Sans:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://use.fontawesome.com/af8de9e751.js"></script>
+    <title>Contact</title>
+</head>
+<body>
+    <%- include('header') %>
+    <div>
+       
+        <section class="about-section" style="top:35px!important  ;color:rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0.4); border-radius: 5px; padding: 1.5%;">
+         
+            <div class="contactt">
+                <h1>Contact us!<br><h2>24/7 - <b>+00 00123456</b></h2></h1>
+            </div>  <p>
+              You know, now, that you need an insurance that satisfies all your requirements.
+            </p>
+            <section class="program">
+            <p2>
+                What's the next step?
+                Contact us.<br>
+                Program of operation and offers<br>
+                | Monday – Friday <br>
+                <b>9.00 – 17.30</b><br>
+            </p2>
+        </section>
+            <br>
+            <p3 tyle="padding: 2.5%;">We will tell you in great detail what each product consists of and we will choose together the one that fits your needs "like a glove".
+                <br>
+                <br>
+                <i>* Your data is treated with care. You will not receive SPAM on your email address.</i></p3>
+        </section>
+    </div>
+    <div class="login-form" style="position: relative; left:10%; top: 5%; bottom: 80%; max-width: 300px;">
+        <form action="/contact" method="POST" >
+      <div>
+        <input  style="background-color: #000000a4; color: rgb(255, 255, 255);" type="text" class="form-control" placeholder="First Name" aria-label="first_name" id="first_name" name="first_name" aria-describedby="basic-addon1" required>
+      </div>
+      <div>
+        <input  style="background-color: #000000a4; color: rgb(255, 255, 255);" type="text" class="form-control" placeholder="Last Name" aria-label="last_name" id="last_name" name="last_name" aria-describedby="basic-addon1" required>
+      </div>
+      <div>
+        <input  style="background-color: #000000a4; color: rgb(255, 255, 255);" type="text" class="form-control" placeholder="Email" aria-label="Email" id="email" name="email" aria-describedby="basic-addon1" required>
+      </div>
+      <div>
+        <textarea type="text"  style="background-color: #000000a4; color: rgb(255, 255, 255); height: 100px; text-align: start;" placeholder="Write.." class="form-control" maxlength="200" rows="4" cols="50" name="message" id="message" aria-describedby="basic-addon1" required></textarea>
+      </div>
+      <br>
+      <button style="border-color: orange; background-color: #000000a4; color: rgb(255, 255, 255);" type="submit" class="btn btn-primary">Contact</button>
+     </form>
+    </div>
+    <div class="maps"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80497.11814323849!2d-1.4004929000000002!3d50.9138207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48738957be152909%3A0xa78c5a6a4cda71f0!2sSouthampton%2C%20Regatul%20Unit!5e0!3m2!1sro!2sro!4v1706395025692!5m2!1sro!2sro" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <%- include('footer') %>
+</body>
+</html>
